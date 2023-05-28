@@ -3,7 +3,10 @@ from time import sleep
 from signal import pause
 import random
 
-leds = LEDBoard(22,23,24,26,27, pwm=True)
+#leds = LEDBoard(22,23,24,26,27, pwm=True)
+
+ledPins = [22, 23, 24, 26, 27]
+leds = LEDBoard(*ledPins)
 
 try:
     while True:
