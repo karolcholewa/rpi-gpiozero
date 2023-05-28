@@ -2,12 +2,17 @@ from gpiozero import LED
 from time import sleep
 import random
 
+#program1:
 while True:
-    led = LED(random.choice([17, 18, 25]))
+    
+    led = LED(random.choice([17,18, 21, 25]))
     print(led)
-#     print(random.getstate())
     led.on()
     sleep(random.uniform(0.1, 0.5))
     led.off()
-    sleep(random.uniform(0.1, 0.1))
+    sleep(random.uniform(0.1, 0.2))
     led = ''
+    
+#program2:
+    
+     
