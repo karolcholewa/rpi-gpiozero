@@ -43,4 +43,4 @@ except KeyboardInterrupt:
     # Clean up GPIO on script interruption
     leds.off()
     leds.close()
-print("end of code")
+    print("end of code")
