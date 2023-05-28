@@ -13,6 +13,7 @@ while True:
     sleep(random.uniform(0.1, 0.2))
     led = ''
     
-#program2:
+# Clean up GPIO on Ctrl+C
+    leds.close()
     
      
